@@ -1,0 +1,97 @@
+#logo {
+    width: 300px;
+    height: 100px;
+    
+}
+
+header {
+    height: 100px;
+    width: 300px;
+    margin: 0px auto;
+}
+
+#search-background {
+    height: min-content;
+    width: auto;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search h5 {
+    margin: 2px ;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+#input {
+    border: 1px turquoise solid;
+    margin: 2px 0px;
+    
+}
+
+button {
+    border-radius: 3px;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.button-group {
+    margin: 2px 0px 15px 0px;
+    display: flex; 
+    flex-direction: row;
+    gap: 10px; 
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#special {
+    background-color: aqua;
+    width: 50%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#special h5 {
+    margin: 10px ;
+}
+
+#links {
+    background-color: aqua;
+    width: 50%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subscription {
+    background-color: aqua;
+    width: 50%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#kapsayici {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#subscription h5 {
+    margin: 0px;
+}
+
+#copyright{
+    margin-top: auto;
+}
