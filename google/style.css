@@ -48,7 +48,12 @@ button {
 footer {
     display: flex;
     gap: 10px;
-    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer-row {
+    display: flex;
+    gap: 10px;
 }
 
 #special {
@@ -65,7 +70,7 @@ footer {
 }
 
 #links {
-    background-color: aqua;
+    background-color: rgb(62, 189, 189);
     width: 50%;
     height: min-content;
     display: flex;
@@ -74,7 +79,7 @@ footer {
 }
 
 #subscription {
-    background-color: aqua;
+    background-color: rgb(3, 140, 140);
     width: 50%;
     height: min-content;
     display: flex;
@@ -93,5 +98,5 @@ footer {
 }
 
 #copyright{
-    margin-top: auto;
+    margin: 0px auto;
 }
