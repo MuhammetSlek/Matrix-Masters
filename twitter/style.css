@@ -1,0 +1,80 @@
+#background {
+    background-color: rgb(130, 130, 130);
+    width: auto;
+    height: 1000px;
+    margin: 0px auto;
+    position: static;
+    display: flex;
+}
+
+#white-background {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 700px;
+    align-items: center;
+
+    margin: 100px auto;
+    border-radius: 40px;
+}
+
+#first-row {
+    display: flex;
+    flex-direction: row;
+    height:min-content;
+    width: auto;
+    justify-content: center;
+}
+
+#twitter {
+    height: 60px;
+    width: 100px;
+
+}
+
+.button {
+    width: 250px;
+    height: 40px;
+    border-radius: 100px;
+    border-color: rgb(0, 0, 0);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-items:center ;
+    gap: 10px;
+}
+
+.google {
+    margin-bottom: 20px;
+    text-justify: auto;
+}
+
+#google-logo { 
+    height: 30px;
+    width: 40px;
+}
+
+#apple-logo {
+    height:35px;
+    width: 40px;
+}
+
+
+
+#cross {
+    justify-self: baseline;
+    align-self:baseline ;
+    height: 40px;
+    width: 40px;
+    margin: 0px;  
+}
+
+#rest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#rest h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -8,17 +8,31 @@
     </head>
     <body>
         <div id="background">
-        <div id="white background">
-            <div id="first row"> /* the twitter logo and the cross button */
+          <div id="white-background">
+            <div id="first-row"> <!-- the twitter logo and the cross button -->
                 <img id="cross" src="images/cross.png" alt="cross button">
                 <img id="twitter" src="images/twitter.png" alt="Twitter Logo">
             </div>
-            <div id="rest"> /* here is the sign in options like google apple accounts beside e-mail login */
-                <h5>Sign in to Twitter</h5>
-                <div id="sign in options">
-                    <button id="google">Sign in with Google</button>
-                    <button id="apple">Sign in with Apple</button>
+            <div id="rest"> <!-- here is the sign in options like google apple accounts beside e-mail login -->
+                <h2>Sign in to Twitter</h2>
+
+
+                <div class='google'> 
+                    <button class='button' id="google">
+                        <img id="google-logo" src="images/google.png" alt="Google Logo">
+                        Sign in with Google
+                    </button>
                 </div>
+
+                <div class='apple'>
+                    <button class='button' id="apple">
+                        <img id="apple-logo" src="images/apple.png" alt="Apple Logo">
+                        Sign in with Apple
+                    </button>
+                </div>
+                
+
+
                 <div id="or">
                     <hr>
                     <h5>or</h5>
@@ -26,24 +40,19 @@
                 </div>
                 <div id="email login">
                     <input type="text" placeholder="Phone, email, or username">
-                    <button id="next">Next</button>
                 </div>
-                <div id="actions"> /* we will have here the next and forgot password buttons */
-                    <button id="forgot">Forgot password?</button>
-                    <button id="next2">Next</button>
+                <div id="actions"> <!-- we will have here the next and forgot password buttons -->
+                     <button class='button' id="next2">Next</button>
+                    <button class='button'   id="forgot">Forgot password?</button>  
                 </div>
-
-                <div id="sign up"> /* we will have here the sign up button */
-                    <h5>Don't have an account?</h5>
-                    <button id="sign up">Sign up</button>
-                </div>
-                
             </div>
 
-
-
-
-        </div>
+            <div id="sign up"> <!-- we will have here the sign up button -->
+                    <h5>Don't have an account?</h5>
+                    <a href="#" id="sign up">Sign up</a>
+            </div>
+            
+          </div>
         </div>
     </body>
 </html>
