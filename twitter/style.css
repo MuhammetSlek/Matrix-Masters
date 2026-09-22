@@ -1,51 +1,73 @@
 #background {
     background-color: rgb(130, 130, 130);
-    width: auto;
+    widtw: auto;
     height: 1000px;
     margin: 0px auto;
     position: static;
     display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #white-background {
     background-color: rgb(255, 255, 255);
-    width: 700px;
+    width: 600px;
     height: 700px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
     margin: 100px auto;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
 #first-row {
+    margin-top: 10px;
+    width: 700px;
+    height: 100px;
+    /*border: solid 5px black;*/
     display: flex;
-    flex-direction: row;
-    height:min-content;
-    width: auto;
-    justify-content: center;
+    justify-content: center ;
+    align-items: center;
+    position: relative;
 }
 
 #twitter {
     height: 60px;
     width: 100px;
+}
+
+#cross {    
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+#rest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .button {
-    width: 250px;
-    height: 40px;
+    width: 400px;
+    height: 50px;
     border-radius: 100px;
-    border-color: rgb(0, 0, 0);
+    border: solid 2px rgb(128, 127, 127);
+    /*border-color: rgb(0, 0, 0);*/
+    font-size: 12pt;
     background-color: white;
     display: flex;
     align-items: center;
-    justify-items:center ;
-    gap: 10px;
+    justify-content:center ;
+    
 }
 
-.google {
+.fast-options {
     margin-bottom: 20px;
-    text-justify: auto;
+    /*text-justify: auto;*/
+
 }
 
 #google-logo { 
@@ -58,23 +80,71 @@
     width: 40px;
 }
 
-
-
-#cross {
-    justify-self: baseline;
-    align-self:baseline ;
-    height: 40px;
-    width: 40px;
-    margin: 0px;  
+#apple {
+    font-weight: bold;
 }
 
-#rest {
+#or {
+    display: flex;
+    align-items: center;
+    width: 100%;    
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+#or hr {
+    flex: 1;
+    /*border: none;*/
+    border-top: 2px solid #afafaf;
+    margin: 0;
+}
+
+#or h2 {
+    margin: 0;
+    color: #000000;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+#standart-login {
+    width: 350px;
+    height: 60px;
+    border: solid 1px rgb(128, 127, 127);
+    border-radius: 3px;
+}
+
+#standart-login::placeholder {
+    padding: 10px ;
+    color: rgb(43, 43, 43);
+    opacity: 0.9 ;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#input {
+    margin-bottom: 20px;
+}
+
+#actions {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+#next {
+    background-color: #000000;
+    border: none;
+    color: #ffff;
+    font-weight: bold;
+}
+
+#sign-up {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 10px ;
+    
 
 }
 
-#rest h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
