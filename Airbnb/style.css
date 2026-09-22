@@ -4,7 +4,10 @@ h4 {
 }
 
 body {
+    
     width: 1000px;
+    margin: 0px auto    ;
+
 }
 
 header p {
@@ -14,13 +17,14 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 100px;
 }
 
 .left-box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 500px;
+    /*width: 200px;*/
 }
 
 .left-box p {
@@ -39,8 +43,6 @@ main {
 }
 
 .inputs input {
-    
-    width: 350px;
     height: 25px;
     border: solid 2px black;
     border-radius: 3px;
@@ -57,18 +59,15 @@ main {
 }
 
 .asseenon {
-    margin-top: 250px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-}
-.asseenon h2 {
     flex-wrap: nowrap;
 }
 
 .asseenon img {
-    height: 50px;
+    height: 40px;
 }
 
 .right-box {
@@ -96,18 +95,18 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 400px;
     
 }
 
 #listing-image {
-    width: 600px;
+    width: 400px;
     height: auto;
 }
 
 #profile-image {
     width: auto;
-    height: 100px;
+    height: 80px;
     margin-right: 10px;
     border-radius: 15px ;
 }
