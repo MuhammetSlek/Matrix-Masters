@@ -3,6 +3,10 @@ h4 {
     margin: 0px;
 }
 
+body {
+    width: 1000px;
+}
+
 header p {
     border-bottom: 1px solid gray;
 }
