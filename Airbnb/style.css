@@ -1,0 +1,120 @@
+p ,
+h4 {
+    margin: 0px;
+}
+
+header p {
+    border-bottom: 1px solid gray;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+}
+
+.left-box p {
+    margin-bottom: 10px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+}
+
+.inputs p {
+    margin: 0px;
+}
+
+.inputs input {
+    
+    width: 350px;
+    height: 25px;
+    border: solid 2px black;
+    border-radius: 3px;
+    margin-bottom: 13px ;
+}
+
+
+.inputs input::placeholder {
+    padding: 5px ;
+    color: rgb(0, 76, 34);
+    opacity: 0.9 ;
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.asseenon {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.asseenon h2 {
+    flex-wrap: nowrap;
+}
+
+.asseenon img {
+    height: 50px;
+}
+
+.right-box {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    gap:10px;
+    margin-right:15px ;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    
+    
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    
+}
+
+#listing-image {
+    width: 600px;
+    height: auto;
+}
+
+#profile-image {
+    width: auto;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 15px ;
+}
+
+
+
+.relatedparts img {
+    width: 250px;
+    height: 130px;
+}
+
+.relatedparts h4 {
+    color: chocolate;
+}
