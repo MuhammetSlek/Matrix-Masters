@@ -1,0 +1,320 @@
+* {
+margin: 0px;
+padding: 0px;
+ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.HeaderContainer {  
+    margin: auto;
+    margin-top: 15px ;
+    width: 90%;
+    background-color: #ffff;
+    border-bottom: 5px solid rgb(0, 149, 186);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.linkedin-logo {
+    width: 180px;
+    height: auto;
+
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px ;
+    flex-wrap: wrap;
+   
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(0, 74, 186);
+    height: 4px;
+    padding-bottom: 15px;
+    padding-right: 8px;
+    border-right: 1px solid gray;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 74, 186);
+
+}
+
+main {
+    margin-top: 5px; ;
+    display: flex;
+    background-color: rgb(182, 181, 181);
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    height: 700px;
+    margin: 50px;
+    background-color: rgb(255, 255, 255);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left-side { /* here i have all the content on the left side*/
+    margin: 30px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.left-side h2 {
+    margin-bottom: 10px;
+    margin-left:5px ;
+    color: rgb(0, 149, 186);
+}
+
+.statments {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-start;
+    align-items: center ;
+    font-weight: 400;
+    gap: 10px;
+
+}
+
+.statment-img {
+    width: 70px;
+    height: 50px;
+}
+
+
+
+.right-side {
+    display: flex;
+    flex-direction: column  wrap;
+    width: 500px;
+    height: min-content;
+    margin: 30px;
+    border: solid 2px gray ;
+    border-radius: 5px;
+}
+
+.joiningBox { 
+    display: flex;
+    flex-direction: column  ;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 149, 186);
+    width: 500px;
+    height:50px ;
+    color: #ffff;
+}
+
+.header h2 {
+    padding: 20px;
+}
+
+.form {
+    
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+
+}
+
+.form form {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group {
+    width: 350px;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    font-size: 17pt;
+}
+
+.input-group input {
+    width: 200px;
+    height: 30px;
+    border: solid 1px gray;
+    border-radius: 3px;
+}
+
+.join-btn {
+    background-image: linear-gradient(to bottom, #52c234 10%, #154b01 90%);
+    color: #ffff;
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    margin-left: 65px;
+    margin-top: 5px; 
+    
+    border: none;
+}
+
+#already-on-linkedin {
+    font-size: 10pt;
+    margin-top: 5px;
+    margin-left: 120px;
+}  
+
+.personsearch {
+    width: 1100px;
+    border-top: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.search-row {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20pt;
+    font-weight: 600;
+    color: rgb(63, 63, 63);
+}
+
+.search-row input {
+    align-items: center;
+    width: 200px;
+    height: 25px;
+}
+
+.search-row input::placeholder {
+    line-height: 9px;
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+.go {
+    font-size: 15pt;
+    height: 35px;
+    width: 50px;
+}
+
+.people-directory {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;   
+    font-size: 13pt;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+}
+
+
+.letters a {
+    font-size: 10pt;
+    text-decoration: none;
+    color: rgb(0, 74, 186);
+    margin-right: 5px ;
+}
+
+#more {
+    padding-left:10px ;
+}
+
+footer {
+    border-top: solid 5px gray;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row ;
+    justify-content: flex-start;
+    gap: 20px;
+    padding:30px 0px 15px 30px ;
+    
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column ;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+.left p {
+    font-size: 13pt;
+    font-weight: bold;
+    color: rgb(83, 83, 83);
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row ;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: rgb(0, 74, 186);
+    margin-right:15px ;
+    padding-right: 10px;
+    border-right: 1px solid gray;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+    padding:0px 0px 20px 30px 
+}
+
+#span {
+    text-decoration: none;
+    color: rgb(0, 74, 186);
+
+}
+
+.footer-links-small a{
+    text-decoration: none;
+    color: rgb(0, 74, 186);
+    margin-right:15px ;
+    font-size: 15px;
+    padding-right: 10px;
+    border-right: 1px solid gray;
+}
+
+#twoborders{
+    padding-left: 10px;
+    border-left: 1px solid gray;
+}
+
