@@ -1,0 +1,40 @@
+@media (min-width: 992px) {
+  #navbarSupportedContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-grow: 0;
+  }
+}
+
+.navbar-elegant {
+  --nav-bg: #1b263b;
+  --nav-accent: #d4af37;
+
+  background-color: var(--nav-bg);
+  border-bottom: 2px solid var(--nav-accent);
+
+  /* Bootstrap's own navbar variables */
+  --bs-navbar-color: rgba(255, 255, 255, 0.75);
+  --bs-navbar-hover-color: var(--nav-accent);
+  --bs-navbar-active-color: var(--nav-accent);
+  --bs-navbar-brand-color: #ffffff;
+  --bs-navbar-brand-hover-color: var(--nav-accent);
+
+  /* Dropdown to match */
+  --bs-dropdown-bg: #223049;
+  --bs-dropdown-border-color: rgba(212, 175, 55, 0.3);
+  --bs-dropdown-link-color: rgba(255, 255, 255, 0.85);
+  --bs-dropdown-link-hover-color: var(--nav-accent);
+  --bs-dropdown-link-hover-bg: rgba(212, 175, 55, 0.12);
+  --bs-dropdown-divider-bg: rgba(255, 255, 255, 0.15);
+}
+
+.special-bg {
+  background-color: #1b263b;
+}
+
+.text-special {
+  color:#d4af37;
+}
