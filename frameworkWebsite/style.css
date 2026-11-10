@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Demiroz Teknoloji — custom theme on top of Bootstrap 5
+   Only the things Bootstrap does not give us out of the box live here.
+   ========================================================================== */
+
+:root {
+  --sky: #00b4d8;
+  --sky-dark: #0077b6;
+  --deep: #0d1b2a;
+  --mid: #1b263b;
+}
+
+/* the accent colour used for "SKY" and links */
+.text-sky {
+  color: var(--sky) !important;
+}
+
+.letter-wide {
+  letter-spacing: 0.18em;
+}
+
+/* ============================== HERO ============================== */
+
+.hero {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(0, 180, 216, 0.35) 0%, transparent 45%),
+    linear-gradient(135deg, var(--deep) 0%, var(--mid) 55%, var(--sky-dark) 100%);
+  padding-block: 4rem;
+}
+
+/* keeps the big headline from touching the screen edges on phones */
+.hero h1 {
+  letter-spacing: -1.5px;
+  line-height: 1.05;
+}
+
+@media (max-width: 575.98px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ============================== BUTTONS ============================== */
+
+.btn-sky {
+  background-color: var(--sky);
+  border-color: var(--sky);
+  color: #04202b;
+  font-weight: 600;
+}
+
+.btn-sky:hover,
+.btn-sky:focus {
+  background-color: #0096c7;
+  border-color: #0096c7;
+  color: #fff;
+}
+
+/* ============================== ABOUT ============================== */
+
+.stat-icon {
+  width: 84px;
+  height: 84px;
+  display: grid;
+  place-items: center;
+  font-size: 2.4rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e0f7ff, #b3ecff);
+}
+
+/* ============================== GALLERY ============================== */
+
+.gallery-tile {
+  aspect-ratio: 4 / 3;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(13, 27, 42, 0.18) !important;
+}
+
+.tile-1 { background: linear-gradient(135deg, #0d1b2a, #415a77); }
+.tile-2 { background: linear-gradient(135deg, #0077b6, #00b4d8); }
+.tile-3 { background: linear-gradient(135deg, #1b263b, #778da9); }
+.tile-4 { background: linear-gradient(135deg, #023e8a, #48cae4); }
+.tile-5 { background: linear-gradient(135deg, #22223b, #9a8c98); }
+.tile-6 { background: linear-gradient(135deg, #003049, #669bbc); }
+
+/* ============================== TEAM ============================== */
+
+.team-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.9rem 1.75rem rgba(13, 27, 42, 0.14) !important;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.avatar-1 { background: linear-gradient(135deg, #0077b6, #00b4d8); }
+.avatar-2 { background: linear-gradient(135deg, #0d1b2a, #415a77); }
+.avatar-3 { background: linear-gradient(135deg, #023e8a, #48cae4); }
+
+/* ============================== FOOTER ============================== */
+
+footer .nav-link {
+  padding-inline: 0.5rem;
+}
+
+footer .nav-link:hover {
+  color: #fff !important;
+}
+
+/* ============================== FORMS ============================== */
+
+.form-control:focus {
+  border-color: var(--sky);
+  box-shadow: 0 0 0 0.25rem rgba(0, 180, 216, 0.2);
+}
