@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# environment / secrets
+.env
+.env.*
+!.env.example
+
+# course material (local reference only - not published)
+_course/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# logs
+*.log
+npm-debug.log*
