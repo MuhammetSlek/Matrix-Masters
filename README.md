@@ -16,7 +16,8 @@ and the Node/Express/MongoDB project.
 | `meterialize/` | Materialize CSS assignment |
 | `frameworkWebsite/` | "Your first website with Framework" — the Demiroz Teknoloji site rebuilt with Bootstrap 5 |
 | `allTogether/` | JavaScript assignments: bring everything together, DOM manipulation, calculator |
-| `servertest/` | Node + Express + EJS + MongoDB ("The Timeline" project) |
+| `assignments/` | Coursework grouped by module — algorithms exercises, plus scaffolds for the remaining modules |
+| `servertest/` | Unrelated Express test folder |
 
 ## Running the projects
 
