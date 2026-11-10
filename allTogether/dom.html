@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header class="topbar">
+      <div class="wrap">
+        <a class="brand" href="index.html">Matrix<span>Masters</span></a>
+        <nav class="topnav">
+          <a href="index.html">1 &middot; Task Board</a>
+          <a class="active" href="dom.html">2 &middot; DOM Manipulation</a>
+          <a href="calculator.html">3 &middot; Calculator</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div class="page-head">
+        <h1>Assignment 2 &mdash; DOM Manipulation</h1>
+        <p>
+          Every button below changes the page using the DOM API &mdash; text, styles, classes,
+          and elements that are created and removed through JavaScript.
+        </p>
+      </div>
+
+      <!-- the element that gets manipulated -->
+      <div class="card">
+        <h2 id="greeting">Hello, world!</h2>
+
+        <div class="panel-grid">
+          <button type="button" id="btn-text">Change the text</button>
+          <button type="button" id="btn-color">Random background</button>
+          <button type="button" id="btn-add">Add a badge</button>
+          <button type="button" id="btn-remove">Remove last badge</button>
+          <button type="button" id="btn-toggle">Toggle dark mode</button>
+          <button type="button" id="btn-list">Build list from array</button>
+          <button type="button" id="btn-reset" class="ghost">Reset everything</button>
+        </div>
+      </div>
+
+      <!-- badges are created and removed here -->
+      <div class="card">
+        <h3 style="margin-top: 0;">Badges</h3>
+        <div id="badge-box">
+          <span class="badge">starter</span>
+        </div>
+      </div>
+
+      <!-- list generated from a JavaScript array -->
+      <div class="card">
+        <h3 style="margin-top: 0;">Generated list</h3>
+        <p style="margin-top: 0; color: #64748b; font-size: 0.9rem;">
+          Press <em>Build list from array</em> to generate these items with a loop.
+        </p>
+        <ul id="colors-list"></ul>
+      </div>
+
+      <!-- every action is written here, newest first -->
+      <div class="card">
+        <h3 style="margin-top: 0;">Action log</h3>
+        <ol id="log"></ol>
+      </div>
+    </main>
+
+    <script src="dom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 - Bring everything together</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- shared navbar between the three assignments -->
+    <header class="topbar">
+      <div class="wrap">
+        <a class="brand" href="index.html">Matrix<span>Masters</span></a>
+        <nav class="topnav">
+          <a class="active" href="index.html">1 &middot; Task Board</a>
+          <a href="dom.html">2 &middot; DOM Manipulation</a>
+          <a href="calculator.html">3 &middot; Calculator</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div class="page-head">
+        <h1>Assignment 1 &mdash; Bring everything together</h1>
+        <p>
+          A task board that combines HTML, CSS and JavaScript: arrays, objects, functions,
+          DOM building and events.
+        </p>
+      </div>
+
+      <!-- add a task -->
+      <div class="card">
+        <form class="task-form" id="task-form">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="What needs to be done?"
+            autocomplete="off"
+            maxlength="120"
+            required>
+          <select id="task-priority" aria-label="Priority">
+            <option value="high">High</option>
+            <option value="medium" selected>Medium</option>
+            <option value="low">Low</option>
+          </select>
+          <button type="submit">Add task</button>
+        </form>
+      </div>
+
+      <!-- the list itself -->
+      <div class="card">
+        <div class="toolbar">
+          <div class="filters">
+            <button type="button" data-filter="all" class="active">All</button>
+            <button type="button" data-filter="active">Active</button>
+            <button type="button" data-filter="done">Done</button>
+          </div>
+          <span class="counter" id="task-counter">0 tasks</span>
+        </div>
+
+        <ul id="task-list"></ul>
+        <div class="empty" id="empty-state">No tasks yet &mdash; add one above.</div>
+
+        <div style="margin-top: 1rem; text-align: right;">
+          <button type="button" class="ghost" id="clear-done" disabled>Clear completed</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

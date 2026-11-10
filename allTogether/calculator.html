@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 - The Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header class="topbar">
+      <div class="wrap">
+        <a class="brand" href="index.html">Matrix<span>Masters</span></a>
+        <nav class="topnav">
+          <a href="index.html">1 &middot; Task Board</a>
+          <a href="dom.html">2 &middot; DOM Manipulation</a>
+          <a class="active" href="calculator.html">3 &middot; Calculator</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div class="page-head">
+        <h1>Assignment 3 &mdash; The Calculator</h1>
+        <p>A working calculator built with plain JavaScript: state, operations and event handling.</p>
+      </div>
+
+      <div class="calc">
+        <div class="calc-display">
+          <div class="calc-history" id="calc-history">&nbsp;</div>
+          <div class="calc-screen" id="calc-screen">0</div>
+        </div>
+
+        <div class="calc-keys">
+          <!-- row 1: clear, backspace, percent, divide -->
+          <button type="button" class="op" data-action="clear">C</button>
+          <button type="button" class="op" data-action="backspace">&larr;</button>
+          <button type="button" class="op" data-action="percent">%</button>
+          <button type="button" class="op" data-op="/">&divide;</button>
+
+          <!-- row 2 -->
+          <button type="button" data-digit="7">7</button>
+          <button type="button" data-digit="8">8</button>
+          <button type="button" data-digit="9">9</button>
+          <button type="button" class="op" data-op="*">&times;</button>
+
+          <!-- row 3 -->
+          <button type="button" data-digit="4">4</button>
+          <button type="button" data-digit="5">5</button>
+          <button type="button" data-digit="6">6</button>
+          <button type="button" class="op" data-op="-">&minus;</button>
+
+          <!-- row 4 -->
+          <button type="button" data-digit="1">1</button>
+          <button type="button" data-digit="2">2</button>
+          <button type="button" data-digit="3">3</button>
+          <button type="button" class="op" data-op="+">+</button>
+
+          <!-- row 5 -->
+          <button type="button" class="span-2" data-digit="0">0</button>
+          <button type="button" data-action="decimal">.</button>
+          <button type="button" class="equals" data-action="equals">=</button>
+        </div>
+      </div>
+
+      <p class="hint">
+        The keyboard works too: digits, <kbd>+</kbd> <kbd>-</kbd> <kbd>*</kbd> <kbd>/</kbd>,
+        <kbd>Enter</kbd> to calculate, <kbd>Backspace</kbd> to delete, <kbd>Esc</kbd> to clear.
+      </p>
+    </main>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
